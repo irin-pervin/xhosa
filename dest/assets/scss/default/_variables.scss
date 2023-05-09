@@ -1,0 +1,147 @@
+/*-- Variables --*/
+:root {
+    //Themes colors
+    --color-primary: #FF9900;
+    --color-secondary: #EC2D2D;
+    --color-bg-dark-gray: #272727;
+
+    //Then
+    --color-heading: #ffffff;
+    --color-body: #888888;
+    --color-bg-1: #1A1A1A;
+    --color-border: #414141;
+
+
+    //Then
+    --color-white: #ffffff;
+    --color-white-off: #FFFFFFAB;
+    
+
+
+    // Then
+    --color-dark-light: #B7B7B7;
+    --color-dark: #383838;
+    --color-darker: #232323;
+    --color-black: #0E0E0E;
+    --color-deep-black: #000000;
+
+    // Then
+    --color-grey: rgba(207,207,207,.24);
+    --color-grey2: #272727;
+
+
+    // Then
+    --color-gray: #A1A9AC;
+    --color-gray-light: #F6F6F6;
+    --color-gray-lighter: #ebebeb;
+
+
+    // Then light Colors 
+    --color-light: #F5F7FA;
+    --color-lighter: #F2F5F9;
+
+    // Then Opacity 
+    --primary-opacity: #2f57ef21;
+
+
+    // Then Card Background Color
+    --color-card-1: #fffccf;
+
+
+
+    // Then Notify Colors 
+    --color-success: #3EB75E;
+    --color-danger: #FF0003;
+    --color-warning: #FF8F3C;
+    --color-info: #1BA2DB;
+
+
+
+    //Extra Colour 
+    --color-extra: rgb(249, 249, 255);
+    --color-extra2: #F9F9FF;
+ 
+
+
+    
+
+
+    //Social icon colors
+    --color-facebook: #3B5997;
+    --color-twitter: #1BA1F2;
+    --color-youtube: #ED4141;
+    --color-linkedin: #0077B5;
+    --color-pinterest: #E60022;
+    --color-instagram: #C231A1;
+    --color-vimeo: #00ADEF;
+    --color-twitch: #6441A3;
+    --color-discord: #7289da;
+    
+    //Border-radius
+    --radius-10: 10px;
+
+
+    //Font weight
+    --f-light: 300;
+    --f-regular: 400;
+    --f-medium: 500;
+    --f-semi-bold: 600;
+    --f-bold: 700;
+    --f-extra-bold: 800;
+    --f-black: 900;
+
+
+    //Shadows
+    --shadow-primary: 0px 4px 10px rgba(37, 47, 63, 0.1);
+
+    
+    //transition easing
+    --transition: 0.5s;
+
+
+    //Font Family
+    --font-primary: 'Prompt', sans-serif;
+
+
+    //Fonts Size
+    --font-size-b1: 24px;
+    --font-size-b2: 18px;
+    --font-size-b3: 16px;
+    --font-size-b4: 12px;
+
+    //Line Height
+    --line-height-b1: 1.5; //24px
+    --line-height-b2: 1.67; //18px
+    --line-height-b3: 1.20; //16px
+    --line-height-b4: 1; //12px
+
+    // Heading Font 
+    --h1: 78px; 
+    --h2: 40px; 
+    --h3: 28px;
+    --h4: 26px; 
+    --h5: 20px; 
+    --h6: 16px; 
+
+
+
+    //Gradient
+    --gradient-1:  linear-gradient(90deg, #FF9900 0%, #EE332B 98.88%);
+    --gradient-2:  linear-gradient(180deg, #FF9900 0%, #EE332B 100%);
+
+}
+
+// Layouts Variation
+$smlg-device: 'only screen and (max-width: 1199px)';
+$lgtolp-device: 'only screen and (min-width: 1200px)';
+$extra-device: 'only screen and (min-width: 1600px) and (max-width: 1919px)';
+$laptop-device: 'only screen and (min-width: 1200px) and (max-width: 1599px)';
+$lg-layout: 'only screen and (min-width: 992px) and (max-width: 1199px)';
+$md-layout:'only screen and (min-width: 768px) and (max-width: 991px)';
+$sm-layout:'only screen and (max-width: 767px)';
+$large-mobile: 'only screen and (max-width: 575px)';
+$small-mobile: 'only screen and (max-width: 479px)';
+
+
+
+

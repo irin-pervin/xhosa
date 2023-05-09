@@ -1,0 +1,17 @@
+.single-service {
+    padding-right: 75px;
+    .service-inner {
+        img {
+            width: 100%;
+        }
+
+        .services-title {
+            font-weight: var(--f-medium);
+            text-align: center;
+            text-transform: capitalize;
+            color: var(--color-white);
+            margin-top: 40px;
+        }
+    }
+    
+}

@@ -1,0 +1,38 @@
+ul {
+    margin-bottom: 0;
+    li {
+        list-style: none;
+        margin: 0;
+        a {
+            display: inline-block;
+        }
+    }
+}
+
+.bg-gradient-color-primary {
+    background: var(--gradient-1);
+}
+
+
+.bg-dark {
+    background-color: var( --color-bg-1);
+}
+.bg-color-dark {
+    background-color: var( --color-black);
+}
+.bg-color-deep-black {
+    background-color: var( --color-deep-black);
+}
+
+.img-url {
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.position-absulate {
+    position: absolute;
+    z-index: 100;
+}
+
+

@@ -1,0 +1,32 @@
+.galary-top{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 30px;
+}
+
+.galary-left-bottom {
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 30px;
+    margin-top: 30px;
+}
+
+.galary-bottom {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 30px;
+    height: 100%;
+    margin-bottom: 30px;
+}
+
+.galary-inner{
+    height: 100%;
+    .thumbnail {
+        height: 100%;
+        img {
+            height: 100%;
+            display: inline-block;
+            width: 100%;
+        }
+    }
+}

@@ -1,0 +1,20 @@
+.section-head {
+    max-width: 550px;
+    margin: 0 auto;
+    margin-bottom: 60px;
+    .sub-title {
+        font-weight: var(--f-medium);
+        font-size: var(  --font-size-b3);
+        line-height:var(--line-height-b3);
+        text-transform: capitalize;
+        color: var(--color-body);
+        text-align: center;
+        margin-bottom: 30px;
+    }
+    .title {
+        font-weight: var(--f-semi-bold);
+        text-transform: capitalize;
+        color: var(--color-white);
+        text-align: center;
+    }
+}

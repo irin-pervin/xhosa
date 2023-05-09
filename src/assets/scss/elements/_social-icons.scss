@@ -1,0 +1,122 @@
+.social-icons {
+    .social-icon-inner {
+        padding: 0;
+        li {
+            padding: 0 40px;
+            &:last-child {
+               padding-right: 0;
+                border-right: none;
+            }
+            &:first-child {
+                padding-left: 0;
+            }
+            
+            a {
+                color: var(--color-body);
+            }
+        }
+        &.social-icons-blog {
+            li {
+                margin-right: 18px;
+                padding: 0;
+                &:last-child {
+                    margin-right: 0;
+                }
+                a {
+                    &:hover {
+                        color: var(--color-heading);
+                    }
+                }
+            }
+
+        }
+    }
+    &.header-social-icons {
+        .social-icon-inner {
+            li {
+            border-right: 1px solid var(--color-body);
+            &:last-child {
+                 border-right: none;
+             }
+             a {
+                transition: .5s;
+                &:hover {
+                    i {
+                        color: var(--color-secondary);
+                    }
+                }
+                i {
+                    transition: var(--transition);
+                }
+             }
+            }
+        }
+    }
+}
+
+
+// Start footer social icons 
+.footer-social-icons {
+    .social-icon-inner {
+        li {
+            padding: 0 7px;
+            a {
+                height: 36px;
+                width: 36px;
+                background-color: transparent;
+                border-radius: 100%;
+                line-height: 36px;
+                text-align: center;
+                border: 1px solid var(--color-body);
+                transition: .5s;
+                position: relative;
+                &::before {
+                    position: absolute;
+                    content: "";
+                    left: 0;
+                    top: 0;
+                    width: 100%;
+                    height: 100%;
+                    z-index: -1;
+                    background: var(--gradient-2);
+                    border: 1px solid var(--gradient-2);
+                    transform: scale(0.5);
+                    opacity: 0;
+                    transition: 0.3s;
+                    border-radius: 100%;
+                }
+                &:hover {
+                    &::before {
+                        opacity: 1;
+                        transform: scale(1);
+                    }
+                    i {
+                        color: var(--color-white);
+                    }
+                   
+                }
+            }
+        }
+    }
+}
+// End footer social icons 
+
+// breadcrunb 
+.breadcrumb-social-icons {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    .social-icons {
+        .social-icon-inner {
+            display: block;
+            text-align: center;
+            li {
+                margin-bottom: 7px;
+                &:last-child {
+                    margin-bottom: 0;
+                }
+                
+            }
+        }
+    }
+}

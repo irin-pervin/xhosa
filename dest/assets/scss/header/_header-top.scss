@@ -1,10 +1,57 @@
 // Start Header Top 
-.header-top{
+.header-top-inner{
     display: flex;
-    background-color: red;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px;
+}
+
+.header-top-left {
+    .header-top-link {
+        margin-right: 65px;
+        font-weight: 400;
+        font-size: 15px;
+        line-height: 1.2;
+        color: var(--color-body);
+        &:last-child {
+            margin-right: 0;
+        }
+        i {
+            margin-right: 15px;
+            color: var(--color-body);
+        }
+    }
 }
 
 .header-top-right {
     display: flex;
 }
+
+.social-icon-inner {
+    display: flex;
+}
+
+.bg-dark {
+    background-color: var(--color-black);
+}
+
+.body{
+    &.main{
+        position: relative;
+    }
+}
+
+header.gmt-header{
+    position: absolute;
+    width: 100%;
+    z-index: 5;
+    width: 1764px;
+}
+
+
+
+
 // End Header Top 
+
+
+

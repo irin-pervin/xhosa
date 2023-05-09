@@ -1,0 +1,86 @@
+.footer-widget {
+    .ft-title {
+        font-weight: var(--f-medium);
+        line-height: 21px;
+        text-transform: capitalize;
+        color: var(--color-white);
+        margin-bottom: 40px;
+    }
+}
+
+.footer-area{
+    background-image: url(../images/footer/footer-1.png);
+    position: relative;
+    padding-top: 160px;
+    padding-bottom: 70px;
+   z-index: 1;
+    &::before {
+        position: absolute;
+        content: " ";
+        height: 100%;
+        width: 100%;
+        background: linear-gradient(180deg, rgba(14, 14, 14, 0.96) 0%, rgba(0, 0, 0, 0.88) 100%);
+        left: 0;
+        top: 0;
+        z-index: -1;
+    }
+    .footer-widget {
+        .ft-link {
+            li {
+                a {
+                    font-weight: var(--f-regular);
+                    font-size: 16px;
+                    line-height: 200%;
+                    text-transform: capitalize;
+                    color: #888888;
+                    &:hover {
+                        color: var(--color-primary);
+                    }
+                }
+            }
+        }
+    }
+}
+
+.form-group {
+    &.right-icon {
+        position: relative;
+        input {
+            background-color: var(--color-deep-black);
+            border: 1px solid var(--color-body);
+            width: 100%;
+            padding: 20px 30px;
+        }
+        img {
+            position: absolute;
+            right: 30px;
+            top: 50%;
+            transform: translate(-50%, -50%);
+            padding-left: 30px;
+            border-left: 1px solid var(--color-body);
+        }
+
+    }
+}
+
+
+.copyright-area {
+    margin-top: 65px;
+    .copyright-inner {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        background-color: var(--color-deep-black);
+        padding: 30px;
+        img {
+            width: 100%;
+        }
+        p {
+            font-weight: var( --f-regular);
+            font-size: 14px;
+            line-height: 18px;
+            color: var(--color-body);
+            opacity: 0.8;
+        }
+    }
+}

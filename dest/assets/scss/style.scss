@@ -1,23 +1,47 @@
-// Default style 
-@import 'default/variable';
+/**************************************
+    Default Styles
+***************************************/
+@import 'default/variables';
 @import 'default/mixins';
 @import 'default/reset';
 @import 'default/typography';
+@import 'default/extend';
 @import 'default/shortcode';
 @import 'default/spacing';
-
 
 /**************************************
 	Header Styles
 ***************************************/
 @import 'header/header-top';
+@import 'header/nav';
 
 
+/**************************************
+	Elements Styles
+***************************************/
+@import 'elements/social-icons';
+@import 'elements/pricing-plan';
+@import 'elements/error';
+@import 'elements/faq';
+@import 'elements/galary';
+@import 'elements/feedback';
+@import 'elements/standard-blog';
+@import 'elements/sidebar';
 
 
+/**************************************
+	Template Styles
+***************************************/
+@import 'template/common';
+@import 'template/services';
+@import 'template/section-title';
+@import 'template/button';
+@import 'template/about';
+@import 'template/breadcrumb';
+@import 'template/team';
 
 
-
-
-
-
+/**************************************
+	Footer Styles
+***************************************/
+@import 'footer/footer';

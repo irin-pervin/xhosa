@@ -1,0 +1,78 @@
+.accordion-item.bg-dark {
+    margin-top: 30px;
+    &:first-child {
+        margin-top: 0;
+    }
+}
+
+.accordion-header {
+    color: #ffffff !important;
+}
+
+.accordion-button:focus {
+    z-index: 3;
+    border-color: #000;
+    outline: 0;
+    box-shadow: 0 0 0 0.25rem rgba(13,110,253,.25);
+}
+
+[type=button]:not(:disabled), [type=reset]:not(:disabled), [type=submit]:not(:disabled), button:not(:disabled) {
+    cursor: pointer;
+    color: #ffffff !important;
+}
+
+button:focus:not(:focus-visible) {
+    outline: none;
+}
+
+.faq-inner {
+    .thumbnail {
+        img {
+            max-height: 384px;
+            width: 100%;
+        }
+    }
+
+    .accordion {
+        .accordion-header {
+            .accordion-button {
+                font-size: 22px;
+                line-height: 1.20;
+                font-weight: var(--f-medium);
+                text-transform: capitalize;
+            }
+        }
+
+        .accordion-body {
+            text-transform: capitalize;
+        }
+    }
+}
+
+
+// Quick action  style 
+
+
+.quick-action-inner {
+    background-color: var( --color-bg-1);
+    padding: 40px 0;
+    transition: .5s;
+    h4 {
+        margin: 30px 0;
+        transition: .5s;
+    }
+    p {
+        
+        margin-bottom: 11px;
+        a {
+        color: var(--color-body);
+        }
+    }
+    &:hover {
+        margin-top: 10px;
+        h4 {
+            color: var(--color-primary);
+        }
+    }
+}
+

@@ -1,0 +1,109 @@
+.single-blog{
+    border: 1px solid var(--color-border);
+    margin-top: 30px;
+    &:first-child {
+        margin-top: 0;
+    }
+    .blog-inner {
+        padding: 30px;
+        .title {
+            font-weight: var(--f-medium);
+            font-size: var(--font-size-b1);
+            line-height: var(--line-height-b1);
+            text-transform: capitalize;
+            margin-top: 30px;
+            margin-bottom: 25px;
+        }
+
+        .description {
+            margin-bottom: 40px;
+            font-weight: var(--f-regular);
+            font-size: 16px;
+            line-height: var(--line-height-b3);
+            text-transform: capitalize;
+            color: #888888;
+
+        }
+    }
+}
+
+
+
+.blog-bottom {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    .publish {
+        display: flex;
+        align-items: center;
+
+        .admin {
+            padding-right: 12px;
+            p {
+                color: var(--color-body);
+                
+                span {
+                    color: var(--color-heading);
+                }
+            }
+        }
+
+        .date {
+            padding-left: 12px;
+            position: relative;
+            &::before {
+                content: " ";
+                position: absolute;
+                width: 1px;
+                height: 61%;
+                background-color: var(--color-body);
+                transform: translate(-50%, -50%);
+                top: 50%;
+                left: 0px;
+            }
+        }
+
+    }
+
+    .social-icons {
+
+    }
+}
+
+
+
+// sidebar style start
+.blog-sidebar{
+    .single-sidebar {
+        margin-top: 40px;
+        .sidebar-inner {
+            background-color: #1a1a1a;
+            padding: 30px;
+            .title {
+                margin-bottom: 40px;
+            }
+            input {
+                display: block;
+                background-color: transparent;
+                margin: 0;
+                border: 0;
+                border-bottom: 1px solid var(--color-body);
+                &:focus:not(:focus-visible) {
+                    outline: none;
+                    /* or any other styles you want to apply */
+                  }
+            }
+            .btn-default {
+                &.btn-sidebar {
+                    display: block;
+                    margin-top: 30px;
+                    text-align: center;
+                }
+            }
+        }
+
+        &:first-child {
+            margin-top: 0;
+        }
+    }
+}

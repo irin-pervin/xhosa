@@ -1,0 +1,90 @@
+
+// sidebar style start
+.blog-sidebar{
+    .single-sidebar {
+        margin-top: 40px;
+        .sidebar-inner {
+            background-color: #1a1a1a;
+            padding: 40px 30px;
+            .title {
+                margin-bottom: 40px;
+            }
+            input {
+                display: block;
+                background-color: transparent;
+                margin: 0;
+                border: 0;
+                border-bottom: 1px solid var(--color-body);
+                &:focus:not(:focus-visible) {
+                    outline: none;
+                    /* or any other styles you want to apply */
+                  }
+            }
+            .btn-default {
+                &.btn-sidebar {
+                    display: block;
+                    margin-top: 30px;
+                    text-align: center;
+                }
+            }
+            .tranding-blog {
+                display: flex;
+                margin-bottom: 30px;
+                &:last-child {
+                    margin-bottom: 0;
+                }
+                .thumbnail{
+                    margin-right: 17px;
+                    img {
+                        height: 100%;
+                    }
+                }
+                .content {
+                    .admin{
+                        p {
+                            span {
+                                color: var(--color-heading);
+                            }
+                        }
+                    }
+                    .description {
+                        color: var(--color-heading);
+                        font-weight: var(--f-regular);
+                        font-size: 16px;
+                        line-height: 1.30;
+                        text-transform: capitalize;
+                        margin-top: 16px;
+                    }
+                }
+            }
+        }
+
+        &:first-child {
+            margin-top: 0;
+        }
+        .content {
+            .all-list {
+                padding: 0;
+                .sidebar-list {
+                    display: flex;
+                    justify-content: space-between;
+                    margin-bottom: 17px;
+                    transition: .5s;
+                    a {
+                        color: var(--color-body);
+                    }
+                    &:last-child {
+                        margin-bottom: 0;
+                    }
+                    &:hover {
+                            color: var(--color-heading);
+                            a {
+                                color: var(--color-heading);
+                            }
+                        
+                    }
+                }
+            }
+        }
+    }
+}

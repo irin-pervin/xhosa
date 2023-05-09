@@ -630,33 +630,23 @@ textarea:-ms-input-placeholder {
 }
 
 
-.rbt-scroll-max-height {
+.gmt-scroll-max-height {
     max-height: 500px!important;
     overflow-y: scroll;
 }
 
-.rbt-scroll::-webkit-scrollbar {
+.gmt-scroll::-webkit-scrollbar {
     width: 10px;
 }
 
-.rbt-scroll::-webkit-scrollbar-thumb {
+.gmt-scroll::-webkit-scrollbar-thumb {
     background-color: #e8e6e9!important;
     outline: 0;
     border-radius: 10px;
 }
-.rbt-scroll::-webkit-scrollbar-track {
+.gmt-scroll::-webkit-scrollbar-track {
     box-shadow: 0 0 1px #cecdcd;
     background: #f6f6f6!important;
     padding: 1px;
     border-radius: 8px;
 }
-
-
-
-
-
-
-
-
-
-

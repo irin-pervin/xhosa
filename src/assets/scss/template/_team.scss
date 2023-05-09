@@ -1,0 +1,63 @@
+.team-area{
+    background-color: #0E0E0E;
+}
+.team-info {
+    max-width: 292px;
+    background-image: url(../images/team/team-bg-1.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 30px;
+    position: relative;
+    z-index: 1;
+    &::before {
+        position: absolute;
+        content: " ";
+        height: 100%;
+        width: 100%;
+        top: 0;
+        left: 0;
+        background-color: #1a1a1af7;
+        z-index: -1;
+    }
+}
+
+.team-info-detail {
+
+}
+
+.gmt-team {
+    &.team-style-one {
+        .inner {
+            position: relative;
+            .thumbnail {
+
+            }
+            .content {
+                position: absolute;
+                bottom: 0;
+                left: 0;
+                .title {
+                    font-weight: var(--f-semi-bold);
+                    font-size: 24px;
+                    line-height: var(--line-height-b3);
+                    text-transform: capitalize;
+                    color: var(--color-white);
+                    margin-bottom: 12px;
+                }
+                .subtitle {
+                    font-weight: 500;
+                    font-size: 16px;
+                    line-height: 120%;
+                    text-transform: capitalize;
+                    color: var( --color-secondary);
+                    margin-bottom: 0;
+                }
+
+            }
+        }
+    }
+}
+
+
+
