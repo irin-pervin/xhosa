@@ -41,6 +41,9 @@
                     height: 80px;
                     line-height: 80px;
                     transition: 0.3s;
+                    i {
+                        margin-left: 7px;
+                    }
                     @media #{$laptop-device} {
                         padding: 0 10px;
                     }
