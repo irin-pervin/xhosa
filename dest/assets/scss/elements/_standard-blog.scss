@@ -1,6 +1,19 @@
 .single-blog{
     border: 1px solid var(--color-border);
     margin-top: 30px;
+    &.blog-border-none {
+        border: none;
+        .blog-inner {
+            padding: 0;
+
+        }
+    }
+
+    &.blog-high {
+        .blog-inner {
+            margin-bottom: 60px;
+        }
+    }
     &:first-child {
         margin-top: 0;
     }
@@ -71,3 +84,28 @@
 }
 
 
+
+
+// blog details style start
+.single-blog-details {
+    padding: 30px;
+    background-color: var(--color-bg-1);
+    .inner {
+        display: flex;
+        align-items: center;
+        .number {
+            margin-right: 20px;
+            h2 {
+                color: var( --color-secondary);
+                font-size: 50px;
+                margin-bottom: 0;
+
+            }
+            
+
+        }
+        .content {
+
+        }
+    }
+}

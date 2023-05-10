@@ -7344,6 +7344,15 @@ button:focus:not(:focus-visible) {
   border: 1px solid var(--color-border);
   margin-top: 30px;
 }
+.single-blog.blog-border-none {
+  border: none;
+}
+.single-blog.blog-border-none .blog-inner {
+  padding: 0;
+}
+.single-blog.blog-high .blog-inner {
+  margin-bottom: 60px;
+}
 .single-blog:first-child {
   margin-top: 0;
 }
@@ -7398,6 +7407,22 @@ button:focus:not(:focus-visible) {
   transform: translate(-50%, -50%);
   top: 50%;
   left: 0px;
+}
+.single-blog-details {
+  padding: 30px;
+  background-color: var(--color-bg-1);
+}
+.single-blog-details .inner {
+  display: flex;
+  align-items: center;
+}
+.single-blog-details .inner .number {
+  margin-right: 20px;
+}
+.single-blog-details .inner .number h2 {
+  color: var(--color-secondary);
+  font-size: 50px;
+  margin-bottom: 0;
 }
 .blog-sidebar .single-sidebar {
   margin-top: 40px;
