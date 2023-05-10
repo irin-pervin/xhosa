@@ -10,6 +10,7 @@
   --color-heading: #ffffff;
   --color-body: #888888;
   --color-bg-1: #1A1A1A;
+  --color-bg-2: #1a1a1a3d;
   --color-border: #414141;
   --color-white: #ffffff;
   --color-white-off: #FFFFFFAB;
@@ -33,6 +34,9 @@
   --color-info: #1BA2DB;
   --color-extra: rgb(249, 249, 255);
   --color-extra2: #F9F9FF;
+  --gradient-opacity: linear-gradient(90deg, #fabf67 0%, #f67b77 98.88%);
+  --primary-opacity: #8d6528;
+  --secondary-opacity: #ff8f8f;
   --color-facebook: #3B5997;
   --color-twitter: #1BA1F2;
   --color-youtube: #ED4141;
@@ -892,8 +896,27 @@ ol ul {
 /* -----------------------------
     Hover Dropdown Extend  
 --------------------------------*/
+.gmt-header .mainmenu-nav .mainmenu li.has-dropdown .submenu {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  visibility: hidden;
+  clip: rect(0px, 200vw, 0, 0px);
+  opacity: 0;
+  transition: opacity 0.4s linear, clip 0.6s linear, visibility 0s 0.4s;
+  transform: translateZ(0);
+}
+
+.gmt-header .mainmenu-nav .mainmenu li.has-dropdown:hover > .submenu {
+  top: 100%;
+  visibility: visible;
+  opacity: 1;
+  clip: rect(0px, 100vw, 200vh, -30px);
+  transition: clip 0.6s linear, opacity 0.4s linear;
+}
+
 /*-----------------------------
-    Rbt Background Gradient
+    gmt Background Gradient
 -------------------------------*/
 .bg-gradient-9 {
   position: relative;
@@ -914,7 +937,7 @@ ol ul {
 /*----------------------
     Bg Image  
 ------------------------*/
-#scrollUp, ul li a, ol li a {
+.gmt-header .mainmenu-nav .mainmenu li.has-dropdown .submenu li a, #scrollUp, ul li a, ol li a {
   transition: var(--transition);
 }
 
@@ -1149,12 +1172,12 @@ ol ul {
 }
 
 /*-----------------------------
-    Rbt Background Gradient
+    gmt Background Gradient
 -------------------------------*/
-.rbt-gradient {
+.gmt-gradient {
   position: relative;
 }
-.rbt-gradient::before {
+.gmt-gradient::before {
   content: "";
   width: 100%;
   position: absolute;
@@ -1164,11 +1187,11 @@ ol ul {
   right: 0px;
   height: 100%;
 }
-.rbt-gradient.bottom-theme-gradient {
+.gmt-gradient.bottom-theme-gradient {
   bottom: 0;
   height: 800;
 }
-.rbt-gradient.bottom-theme-gradient::before {
+.gmt-gradient.bottom-theme-gradient::before {
   background: var(--gradient-3);
 }
 
@@ -6834,121 +6857,120 @@ textarea:-ms-input-placeholder {
 /**************************************
 	Header Styles
 ***************************************/
-.header-top-inner {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 30px;
-}
-
-.header-top-left .header-top-link {
-  margin-right: 65px;
-  font-weight: 400;
-  font-size: 15px;
-  line-height: 1.2;
-  color: var(--color-body);
-}
-.header-top-left .header-top-link:last-child {
-  margin-right: 0;
-}
-.header-top-left .header-top-link i {
-  margin-right: 15px;
-  color: var(--color-body);
-}
-
-.header-top-right {
-  display: flex;
-}
-
-.social-icon-inner {
-  display: flex;
-}
-
-.bg-dark {
-  background-color: var(--color-black);
-}
-
-.body.main {
-  position: relative;
-}
-
-header.gmt-header {
-  position: absolute;
-  width: 100%;
-  z-index: 5;
-  width: 1764px;
-}
-
 .header-container {
-  position: relative;
-}
-.header-container .header-left {
-  max-width: 1378px;
-  padding: 20px 0;
-  clip-path: polygon(0 0, 100% 0, 98% 100%, 0% 100%);
+  display: grid;
+  grid-template-columns: 1fr 426px;
+  gap: 0;
 }
 .header-container .header-left .header-left-inner {
-  padding-left: 225px;
   display: flex;
   align-items: center;
 }
-
-.header-nav .mainmenu {
-  display: flex;
-  align-items: center;
+.header-container .header-right {
+  padding: 30px;
 }
-.header-nav .mainmenu > li {
-  margin: 0;
-  position: relative;
-}
-.header-nav .mainmenu > li ul {
-  position: absolute;
-  background-color: red;
-  width: 200px;
-  z-index: 200;
-}
-.header-right {
-  display: flex;
-  clip-path: polygon(6% 0, 100% 0, 100% 100%, 0% 100%);
-}
-
-.header-right-inner {
+.header-container .header-right .header-right-inner {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 0 34px;
 }
-.header-right-inner .contact {
+.header-container .header-right .header-right-inner .contact {
   display: flex;
   align-items: center;
 }
-.header-right-inner .contact p {
-  margin: 0;
-}
-.header-right-inner .contact p i {
-  width: 42px;
-  height: 42px;
-  background: var(--color-white);
-  border-radius: 100%;
-  text-align: center;
-  line-height: 42px;
-  color: var(--color-primary);
-  margin-right: 10px;
-}
-.header-right-inner .contact a {
-  color: var(--color-white);
-}
-.header-right-inner .dots {
-  margin-left: 140px;
-}
 
-header {
-  position: fixed;
+.gmt-header .mainmenu-nav .mainmenu {
+  display: flex;
+  align-items: center;
+}
+.gmt-header .mainmenu-nav .mainmenu > li > a {
+  color: var(--color-heading);
+  font-size: 16px;
+  font-weight: 500;
+  padding: 0 17px;
+  display: flex;
+  align-items: center;
+  height: 80px;
+  line-height: 80px;
+  transition: 0.3s;
+}
+@media only screen and (min-width: 1200px) and (max-width: 1599px) {
+  .gmt-header .mainmenu-nav .mainmenu > li > a {
+    padding: 0 10px;
+  }
+}
+@media only screen and (min-width: 992px) and (max-width: 1199px) {
+  .gmt-header .mainmenu-nav .mainmenu > li > a {
+    padding: 0 10px;
+  }
+}
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  .gmt-header .mainmenu-nav .mainmenu > li > a {
+    padding: 0 12px;
+  }
+}
+.gmt-header .mainmenu-nav .mainmenu > li > a i {
+  transition: 0.3s;
+}
+.gmt-header .mainmenu-nav .mainmenu > li > a.active {
+  color: var(--color-heading);
+}
+.gmt-header .mainmenu-nav .mainmenu > li:hover > a, .gmt-header .mainmenu-nav .mainmenu > li.active > a {
+  color: var(--color-heading) !important;
+}
+.gmt-header .mainmenu-nav .mainmenu > li:hover > a i, .gmt-header .mainmenu-nav .mainmenu > li.active > a i {
+  transform: rotate(180deg);
+  margin-top: 2px;
+}
+.gmt-header .mainmenu-nav .mainmenu li {
+  margin-top: 0;
+  margin-bottom: 0;
+  position: relative;
+}
+.gmt-header .mainmenu-nav .mainmenu li:first-child a {
+  padding-left: 0;
+}
+.gmt-header .mainmenu-nav .mainmenu li:last-child a {
+  padding-right: 0;
+}
+.gmt-header .mainmenu-nav .mainmenu li.has-dropdown .submenu {
+  min-width: 240px;
+  height: auto;
+  z-index: 90;
+  text-align: left;
+  padding: 12px 0;
+  border-radius: 0 0 10px 10px;
+  box-shadow: var(--shadow-1);
+  display: flex;
+  background-color: var(--color-border);
+  flex-direction: column;
+  border-top: 1px solid var(--color-secondary);
+}
+.gmt-header .mainmenu-nav .mainmenu li.has-dropdown .submenu li {
+  position: relative;
+}
+.gmt-header .mainmenu-nav .mainmenu li.has-dropdown .submenu li a {
+  font-weight: 500;
+  padding: 10px 20px;
+  font-size: 14px;
+  display: block;
+  color: var(--color-body);
+  margin: 0 10px;
+  border-radius: 3px;
+}
+.gmt-header .mainmenu-nav .mainmenu li.has-dropdown .submenu li a:hover {
+  color: var(--color-primary) !important;
+  background: var(--color-bg-2);
+}
+.gmt-header .mainmenu-nav .mainmenu li.has-dropdown .submenu li a.active {
+  color: var(--color-primary) !important;
+  background: var(--gradient-opacity);
+}
+.gmt-header .mainmenu-nav .mainmenu li.has-dropdown .submenu li ul.submenu {
+  left: 100%;
   top: 0;
-  left: 0;
-  right: 0;
+  text-align: left;
 }
-
 /**************************************
 	Elements Styles
 ***************************************/
@@ -7623,12 +7645,6 @@ ul li a {
 .breadcrumb-area {
   display: grid;
   grid-template-columns: 1fr 140px;
-  gap: 0;
-}
-
-.header-container {
-  display: grid;
-  grid-template-columns: 1fr 426px;
   gap: 0;
 }
 
