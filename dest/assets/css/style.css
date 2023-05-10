@@ -6862,21 +6862,39 @@ textarea:-ms-input-placeholder {
   grid-template-columns: 1fr 426px;
   gap: 0;
 }
+.header-container .header-left {
+  padding-left: 150px;
+  clip-path: polygon(0 0, 100% 0, 98% 100%, 0% 100%);
+}
 .header-container .header-left .header-left-inner {
   display: flex;
   align-items: center;
 }
 .header-container .header-right {
-  padding: 30px;
+  clip-path: polygon(6% 0, 100% 0, 100% 100%, 0% 100%);
 }
 .header-container .header-right .header-right-inner {
   display: flex;
   align-items: center;
   justify-content: space-between;
+  padding: 34px;
 }
 .header-container .header-right .header-right-inner .contact {
   display: flex;
   align-items: center;
+}
+.header-container .header-right .header-right-inner .contact p {
+  margin-bottom: 0;
+}
+.header-container .header-right .header-right-inner .contact p i {
+  height: 42px;
+  width: 42px;
+  line-height: 42px;
+  text-align: center;
+  background-color: var(--color-heading);
+  border-radius: 100%;
+  color: var(--color-primary);
+  margin-right: 10px;
 }
 
 .gmt-header .mainmenu-nav .mainmenu {
@@ -6973,6 +6991,11 @@ textarea:-ms-input-placeholder {
   left: 100%;
   top: 0;
   text-align: left;
+}
+.header-with-breadcrump-with-social-icons {
+  display: grid;
+  grid-template-columns: 1fr 140px;
+  gap: 0;
 }
 /**************************************
 	Elements Styles
@@ -7670,12 +7693,6 @@ ul li a {
   display: flex;
   padding: 0;
 }
-.breadcrumb-area {
-  display: grid;
-  grid-template-columns: 1fr 140px;
-  gap: 0;
-}
-
 .team-area {
   background-color: #0E0E0E;
 }

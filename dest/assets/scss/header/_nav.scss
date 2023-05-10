@@ -3,23 +3,38 @@
     grid-template-columns: 1fr 426px;
     gap: 0;
     .header-left {
-        // clip-path: polygon(0 0, 100% 0, 98% 100%, 0% 100%);
+        padding-left: 150px;
+        clip-path: polygon(0 0, 100% 0, 98% 100%, 0% 100%);
         .header-left-inner{
             display: flex;
             align-items: center;
         }
     }
     .header-right {
-        // clip-path: polygon(6% 0, 100% 0, 100% 100%, 0% 100%);
-        padding: 30px;
+        clip-path: polygon(6% 0, 100% 0, 100% 100%, 0% 100%);
+        
         .header-right-inner{
             display: flex;
             align-items: center;
             justify-content: space-between;
+            padding: 34px;
             
             .contact {
                 display: flex;
                 align-items: center;
+                p {
+                    margin-bottom: 0;
+                    i {
+                        height: 42px;
+                        width: 42px;
+                        line-height: 42px;
+                        text-align: center;
+                        background-color: var(--color-heading);
+                        border-radius: 100%;
+                        color: var(--color-primary);
+                        margin-right: 10px;
+                    }
+                }
             }
         }
     }
@@ -146,5 +161,18 @@
                 }
             }
         }
+    }
+}
+
+
+// practice 
+
+.header-with-breadcrump-with-social-icons{
+    display: grid;
+    grid-template-columns: 1fr 140px;
+    gap: 0;
+
+    .header-with-breadcrump-inner {
+        
     }
 }
