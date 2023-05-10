@@ -71,39 +71,3 @@
 }
 
 
-
-// sidebar style start
-.blog-sidebar{
-    .single-sidebar {
-        margin-top: 40px;
-        .sidebar-inner {
-            background-color: #1a1a1a;
-            padding: 30px;
-            .title {
-                margin-bottom: 40px;
-            }
-            input {
-                display: block;
-                background-color: transparent;
-                margin: 0;
-                border: 0;
-                border-bottom: 1px solid var(--color-body);
-                &:focus:not(:focus-visible) {
-                    outline: none;
-                    /* or any other styles you want to apply */
-                  }
-            }
-            .btn-default {
-                &.btn-sidebar {
-                    display: block;
-                    margin-top: 30px;
-                    text-align: center;
-                }
-            }
-        }
-
-        &:first-child {
-            margin-top: 0;
-        }
-    }
-}

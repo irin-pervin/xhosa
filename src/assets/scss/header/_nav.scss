@@ -24,8 +24,18 @@
         align-items: center;
         > li {
             margin: 0;
+            position: relative;
             a {
     
+            }
+            ul {
+                position: absolute;
+                background-color: red;
+                width: 200px;
+                z-index: 200;
+                li {
+
+                }
             }
         }
     }
@@ -69,4 +79,11 @@
     }
 }
 
+
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+}
 
