@@ -7070,6 +7070,12 @@ textarea:-ms-input-placeholder {
   transition: var(--transition);
 }
 
+.footer-social-icons {
+  margin-top: 40px;
+}
+.footer-social-icons .social-icon-inner {
+  display: flex;
+}
 .footer-social-icons .social-icon-inner li {
   padding: 0 7px;
 }
@@ -7781,6 +7787,15 @@ ul li a {
   color: var(--color-white);
   margin-bottom: 40px;
 }
+.footer-widget p {
+  margin: 0;
+}
+.footer-widget p.subscribe {
+  margin-bottom: 20px;
+}
+.footer-widget .ft-description {
+  margin-bottom: 0;
+}
 
 .footer-area {
   background-image: url(../images/footer/footer-1.png);
@@ -7819,13 +7834,15 @@ ul li a {
   width: 100%;
   padding: 20px 30px;
 }
-.form-group.right-icon img {
+.form-group.right-icon button {
   position: absolute;
   right: 30px;
   top: 50%;
   transform: translate(-50%, -50%);
-  padding-left: 30px;
+  padding-left: 20px;
+  border: none;
   border-left: 1px solid var(--color-body);
+  background-color: transparent;
 }
 
 .copyright-area {

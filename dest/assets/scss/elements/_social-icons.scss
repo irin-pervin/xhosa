@@ -57,7 +57,9 @@
 
 // Start footer social icons 
 .footer-social-icons {
+    margin-top: 40px;
     .social-icon-inner {
+        display: flex;
         li {
             padding: 0 7px;
             a {
