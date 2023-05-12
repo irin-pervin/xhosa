@@ -58,6 +58,14 @@
 // Start footer social icons 
 .footer-social-icons {
     margin-top: 40px;
+    @media #{$md-layout} {
+        margin-top: 20px;
+    }
+
+    @media #{$sm-layout} {
+        margin-top: 15px;
+    }
+
     .social-icon-inner {
         display: flex;
         li {
@@ -81,11 +89,11 @@
                     height: 100%;
                     z-index: -1;
                     background: var(--gradient-2);
-                    border: 1px solid var(--gradient-2);
                     transform: scale(0.5);
                     opacity: 0;
                     transition: 0.3s;
                     border-radius: 100%;
+                    border: none;
                 }
                 &:hover {
                     &::before {

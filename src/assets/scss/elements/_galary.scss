@@ -2,6 +2,12 @@
     display: grid;
     grid-template-columns: repeat(2,1fr);
     gap: 30px;
+    @media #{$md-layout} {
+       gap: 20px;
+    }
+    @media #{$sm-layout} {
+        gap: 10px;
+     }
 }
 
 .galary-left-bottom {
@@ -9,6 +15,16 @@
     grid-template-columns: repeat(2,1fr);
     gap: 30px;
     margin-top: 30px;
+    @media #{$md-layout} {
+        gap: 20px;
+     }
+
+     @media #{$sm-layout} {
+        gap: 10px;
+        margin-top: 10px;
+     }
+
+
 }
 
 .galary-bottom {
@@ -17,6 +33,13 @@
     gap: 30px;
     height: 100%;
     margin-bottom: 30px;
+    @media #{$md-layout} {
+        gap: 20px;
+     }
+     @media #{$sm-layout} {
+        gap: 10px;
+        margin-top: 10px;
+     }
 }
 
 .galary-inner{
@@ -28,5 +51,14 @@
             display: inline-block;
             width: 100%;
         }
+    }
+}
+
+.galary-area {
+    position: relative;
+    &::before {
+        position: absolute;
+        content: " ";
+        
     }
 }

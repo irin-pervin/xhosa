@@ -1,11 +1,49 @@
 .error-inner {
+
+    img {
+        @media #{$md-layout} {
+            max-width: 50%;
+            margin-bottom: 70px;
+        }
+        @media #{$sm-layout} {
+            max-width: 50%;
+            margin-bottom: 50px;
+        }
+    }
     .title {
         margin-top: -115px;
+        @media #{$sm-layout} {
+            margin-top: -50px;
+            margin-bottom: 15px;
+        }
     }
     .description {
         padding: 0 301px;
+        @media #{$md-layout} {
+            padding: 0 50px;
+        }
+
+        @media #{$sm-layout} {
+            padding: 0 10px;
+            font-size: 14px;
+        }
+
+        @media #{$large-mobile} {
+            padding: 0 10px;
+            font-size: 13px;
+        }
+
+        @media #{$small-mobile} {
+            padding: 0 10px;
+            font-size: 13px;
+        }
+
+
     }
     .view-more-button {
         margin-top: 60px;
+        @media #{$sm-layout} {
+            margin-top: 40px;
+        }
     }
 }

@@ -1,0 +1,95 @@
+.contact-inner {
+    .title {
+        font-weight: var(--f-bold);
+        text-transform: capitalize;
+        color: var( --color-heading);
+        margin-bottom: 60px;
+    }
+}
+
+form {
+    input {
+        background-color: transparent;
+        border: none;
+        border-bottom: 2px solid red;
+        margin-bottom: 40px;
+        
+        &:focus-visible {
+            outline: none;
+        }
+        &.gradient-border {
+            border-radius: 0;
+            padding: 5px;
+            color: #fff;
+            border-bottom: 2px solid var(--color-body);
+            padding-bottom: 24px;
+            padding-right: 115px;
+          }
+        
+       
+
+        &:hover {
+            &.gradient-border {
+                border-image: linear-gradient(to right, #FF9900, #EE332B) 1;
+               
+              }
+        }
+       
+    }
+
+    .subject {
+        display: block;
+        width: 100%;
+        position: relative;
+        input {
+
+        }
+        .icon {
+            position: absolute;
+            right: 0;
+            top: 19px;
+            i  {
+                color: var(--color-primary);
+            }
+        }
+    }
+
+    // input:focus-visible {
+    //     outline: none;
+       
+    //   }
+
+
+    textarea {
+        border: 0;
+        height: 177px;
+        width: 100%;
+        background: transparent;
+        &.gradient-border {
+            border-radius: 0;
+            padding: 5px;
+            color: #fff;
+            border-bottom: 2px solid var(--color-body);
+
+            // border-image: linear-gradient(to right, #FF9900, #EE332B) 1;
+           
+          }
+          &:hover {
+            &.gradient-border {
+                border-image: linear-gradient(to right, #FF9900, #EE332B) 1;
+               
+              }
+        }
+        &:focus-visible {
+            outline: none;
+        }
+        
+    }
+
+    button {
+        
+        margin-top: 40px;
+        
+    }
+}
+
