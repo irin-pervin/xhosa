@@ -7574,6 +7574,16 @@ button:focus:not(:focus-visible) {
 .single-blog.blog-high .blog-inner {
   margin-bottom: 60px;
 }
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  .single-blog.blog-high .blog-inner {
+    margin-bottom: 40px;
+  }
+}
+@media only screen and (max-width: 767px) {
+  .single-blog.blog-high .blog-inner {
+    margin-bottom: 30px;
+  }
+}
 .single-blog:first-child {
   margin-top: 0;
 }
@@ -7587,6 +7597,20 @@ button:focus:not(:focus-visible) {
   text-transform: capitalize;
   margin-top: 30px;
   margin-bottom: 25px;
+}
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  .single-blog .blog-inner .title {
+    font-size: 18px;
+    margin-top: 25px;
+    margin-bottom: 12px;
+  }
+}
+@media only screen and (max-width: 767px) {
+  .single-blog .blog-inner .title {
+    font-size: 16px;
+    margin-top: 15px;
+    margin-bottom: 8px;
+  }
 }
 .single-blog .blog-inner .description {
   margin-bottom: 40px;
@@ -7615,6 +7639,16 @@ button:focus:not(:focus-visible) {
 .blog-bottom .publish .admin p span {
   color: var(--color-heading);
 }
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  .blog-bottom .publish .admin p {
+    font-size: 14px;
+  }
+}
+@media only screen and (max-width: 767px) {
+  .blog-bottom .publish .admin p {
+    font-size: 12px;
+  }
+}
 .blog-bottom .publish .date {
   padding-left: 12px;
   position: relative;
@@ -7629,6 +7663,17 @@ button:focus:not(:focus-visible) {
   top: 50%;
   left: 0px;
 }
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  .blog-bottom .publish .date {
+    font-size: 14px;
+  }
+}
+@media only screen and (max-width: 767px) {
+  .blog-bottom .publish .date {
+    font-size: 12px;
+  }
+}
+
 .single-blog-details {
   padding: 30px;
   background-color: var(--color-bg-1);

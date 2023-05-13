@@ -12,6 +12,13 @@
     &.blog-high {
         .blog-inner {
             margin-bottom: 60px;
+            @media #{$md-layout} {
+                margin-bottom: 40px;
+              }
+
+              @media #{$sm-layout} {
+                margin-bottom: 30px;
+              }
         }
     }
     &:first-child {
@@ -26,6 +33,17 @@
             text-transform: capitalize;
             margin-top: 30px;
             margin-bottom: 25px;
+            @media #{$md-layout} {
+               font-size: 18px;
+               margin-top: 25px;
+               margin-bottom: 12px;
+             }
+
+             @media #{$sm-layout} {
+                font-size: 16px;
+                margin-top: 15px;
+                margin-bottom: 8px;
+              }
         }
 
         .description {
@@ -58,7 +76,15 @@
                 span {
                     color: var(--color-heading);
                 }
+                @media #{$md-layout} {
+                    font-size: 14px;
+                  }
+
+                  @media #{$sm-layout} {
+                    font-size: 12px;
+                  }
             }
+           
         }
 
         .date {
@@ -74,11 +100,15 @@
                 top: 50%;
                 left: 0px;
             }
+
+            @media #{$md-layout} {
+                font-size: 14px;
+              }
+
+              @media #{$sm-layout} {
+                font-size: 12px;
+              }
         }
-
-    }
-
-    .social-icons {
 
     }
 }
