@@ -7341,7 +7341,6 @@ button:focus:not(:focus-visible) {
 }
 
 .faq-inner .thumbnail img {
-  max-height: 384px;
   width: 100%;
 }
 .faq-inner .accordion .accordion-header .accordion-button {
@@ -7349,9 +7348,17 @@ button:focus:not(:focus-visible) {
   line-height: 1.2;
   font-weight: var(--f-medium);
   text-transform: capitalize;
+  padding: 30px 20px;
+  border-top: 2px solid var(--color-body);
+  border-image: linear-gradient(to right, #FF9900, #EE332B) 1;
+}
+.faq-inner .accordion .accordion-header .accordion-button.collapsed {
+  border-top: none;
 }
 .faq-inner .accordion .accordion-body {
   text-transform: capitalize;
+  padding-bottom: 30px;
+  padding: 0 20px 30px 20px;
 }
 
 .quick-action-inner {
@@ -7359,9 +7366,25 @@ button:focus:not(:focus-visible) {
   padding: 40px 0;
   transition: 0.5s;
 }
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  .quick-action-inner {
+    margin-bottom: 20px;
+  }
+}
+@media only screen and (max-width: 767px) {
+  .quick-action-inner {
+    margin-bottom: 20px;
+    padding: 25px 0;
+  }
+}
 .quick-action-inner h4 {
   margin: 30px 0;
   transition: 0.5s;
+}
+@media only screen and (max-width: 767px) {
+  .quick-action-inner h4 {
+    margin: 20px 0;
+  }
 }
 .quick-action-inner p {
   margin-bottom: 11px;

@@ -26,25 +26,37 @@ button:focus:not(:focus-visible) {
 }
 
 .faq-inner {
+    
     .thumbnail {
         img {
-            max-height: 384px;
+            
             width: 100%;
         }
     }
 
     .accordion {
+       
         .accordion-header {
             .accordion-button {
                 font-size: 22px;
                 line-height: 1.20;
                 font-weight: var(--f-medium);
                 text-transform: capitalize;
+                padding: 30px 20px;
+                border-top: 2px solid var(--color-body);
+                border-image: linear-gradient(to right, #FF9900, #EE332B) 1;
+
+                &.collapsed {
+                    border-top: none;
+                }
             }
         }
 
         .accordion-body {
             text-transform: capitalize;
+            padding-bottom: 30px;
+            padding: 0 20px 30px 20px;
+           
         }
     }
 }
@@ -57,9 +69,20 @@ button:focus:not(:focus-visible) {
     background-color: var( --color-bg-1);
     padding: 40px 0;
     transition: .5s;
+    @media #{$md-layout} {
+        margin-bottom: 20px;
+     }
+
+     @media #{$sm-layout} {
+        margin-bottom: 20px;
+        padding: 25px 0;
+     }
     h4 {
         margin: 30px 0;
         transition: .5s;
+        @media #{$sm-layout} {
+            margin: 20px 0;
+         }
     }
     p {
         
