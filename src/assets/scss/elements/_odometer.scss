@@ -1,0 +1,95 @@
+.odometer-section {
+    background: var(--color-black);
+    max-width: 320px;
+    padding: 0 50px;
+    padding-top: 40px;
+    padding-bottom: 30px;
+    margin-top: 65px;
+    &.odometer-oil-industry {
+        max-width: 100%;
+        display: flex;
+        justify-content: space-around;
+        background-color: transparent;
+        margin: 0;
+        padding: 0;
+
+        .single-odometer {
+            border-bottom: 0;
+            
+           
+            .odometer-inner {
+                .number {
+                    .odometer {
+                        &.odometer-number {
+                            color: var(--color-heading);
+                        }
+                    }
+
+                    span {
+                        color: red;
+                    }
+                    
+                }
+            }
+        }
+    }
+    .single-odometer {
+        border-bottom: 1px solid #1F1F1F;
+        &:last-child {
+            border-bottom: none;
+        }
+       
+        .odometer-inner {
+            span  {
+                font-size: 30px;
+                color: #FF9900;
+                margin-top: -2px;
+                font-weight: 400;
+                
+            }
+        }
+    }
+}
+
+.odometer-inside {
+    // font-size: 40px;
+    // color: #FF9900;
+    // font-weight: 600;
+    span {
+        color: #FF9900;
+        font-size: 40px;
+        font-weight: 600;
+    }
+}
+
+
+.odometer {
+    &.odometer-theme-default {
+        line-height: 30px;
+        padding-right: 10px;
+    }
+
+}
+
+.odometer-description {
+    padding-bottom: 30px;
+    font-size: 20px;
+    text-transform: capitalize;
+    font-weight: var(--f-light);
+    line-height: 1.3;
+}
+
+
+// .odometer-section.odometer-oil-industry .single-odometer .odometer-inner span {
+//     color: red;
+// }
+
+// common odometer 
+.odometer-thumbnail {
+    position: relative;
+    margin-top: -70px;
+    background-image: url(../images/odometer/odometer-bg.png);
+    &::before {
+        background: linear-gradient(111.46deg, #000000 0%, rgba(0, 0, 0, 0.83) 100%);
+    }
+}

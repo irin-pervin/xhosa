@@ -1,5 +1,187 @@
 .about-area{
-    background-image: url(../images/about/about.png);
-    padding: 100px;
-    margin-left: 100px;
+   background-color: #0E0E0E;
+
+    .about-thumbnail {
+        background-image: url(../images/about/about-background-image.png);
+        background-position: center;
+        background-size: cover;
+        padding: 100px 0;
+        position: relative;
+        z-index: 1;
+        &::before {
+            position: absolute;
+            content: " ";
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(111.46deg, #000000 0%, rgba(0, 0, 0, 0.83) 100%);
+            z-index: -1;
+            
+        }
+    }
 }
+
+
+
+.about-inner {
+    background-color: #0E0E0E;
+    
+    .thumbnail {
+        position: relative;
+        width: 100%;
+        img {
+            display: inline-block;
+        }
+        .year {
+            position: absolute;
+            top: 50%;
+            right: -19%;
+            transform: translate(-50%,-50%);
+            text-stroke: 2px transparent;
+            -webkit-text-stroke: 2px #FFFFFF;
+            font-weight: var(--f-medium);
+            font-size: 128px;
+            line-height: 1.20;
+            text-align: center;
+            text-transform: capitalize;
+            color: transparent;
+            display: inline-block;
+        }
+    }
+    
+    .content {
+        padding: 40px;
+        position: relative;
+        .title {
+                font-weight: var(--f-semi-bold);
+                font-size: 24px;
+                line-height: 1.30;
+                text-transform: capitalize;
+                color: #FFFFFF;
+            &.title-left {
+                position: absolute;
+                left: -150px;
+                top: 50%;
+                transform: rotate(-90deg);
+            }
+        }
+
+        .description {
+            margin-top: 25px;
+        }
+        .category {
+            display: flex;
+            li {
+            
+                margin-right: 45px;
+                color: var(--color-heading);
+                position: relative;
+                &::before {
+                    content: " ";
+                    position: absolute;
+                    height: 6px;
+                    width: 6px;
+                    background-color: var(--color-heading);
+                    left: -13px;
+                    top: 7px;
+                    border-radius: 100%;
+                }
+                &:last-child {
+                    margin-right: 0;
+                }
+                a {
+                    font-weight: 400;
+                    font-size: 16px;
+                    line-height: 130%;
+                    text-transform: capitalize;
+                    
+                }
+            }
+        }
+
+        .category-gas-about {
+            padding: 0;
+            li {
+                margin-bottom: 20px;
+                &:last-child {
+                    margin-bottom: 0;
+                }
+                .icon {
+                    display: inline-block;
+                    width: 22px;
+                    height: 22px;
+                    line-height: 22px;
+                    background-color: var(--color-secondary);
+                    border-radius: 100%;
+                    text-align: center;
+                    color: var(--color-heading);
+                    i {
+                    
+                    }
+                }
+              
+                .title {
+                    font-size: 16px;
+                    display: inline-block;
+                }
+                
+               
+                
+            }
+        }
+
+        .contact {
+            display: flex;
+            align-items: center;
+            margin-top: 40px;
+            .about-icon-with-phone-number {
+                
+            }
+
+            p {
+                color: var(--color-heading);
+                margin-left: 30px;
+                margin-right: 20px;
+                &.about-icon-with-phone-number-inner {
+                    background-color: var(--color-grey3);
+                    text-align: center;
+                    padding: 40px;
+                    border-top: 2px solid var(--color-secondary);
+                    a {
+                        display: inline-block;
+                        margin: 0;
+                        margin-bottom: 30px;
+                        background: rgb(245,14,4);
+                        background: radial-gradient(circle, rgba(245,14,4,0.35057773109243695) 0%, rgba(238,51,43,0.7175245098039216) 100%);
+                      
+                        i {
+                            color: #EE332B;
+                        }
+                    }
+                    span {
+                        display: block;
+                        color: var(--color-heading);
+                    }
+                }
+                a {
+                    display: inline-block;
+                    width: 42px;
+                    height: 42px;
+                    line-height: 42px;
+                    text-align: center;
+                    background: rgba(255, 255, 255, 0.1);
+                    border-radius: 100%;
+                    margin-left: 20px;
+                    margin-right: 10px;
+                }
+                span {
+                    color: var(--color-secondary);
+                }
+            }
+        }
+    }
+}
+
+
+

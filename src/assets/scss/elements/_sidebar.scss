@@ -42,8 +42,12 @@
                 .content {
                     .admin{
                         p {
+                            @media #{$sm-layout} {
+                                font-size: 10px;
+                             }
                             span {
                                 color: var(--color-heading);
+                               
                             }
                         }
                     }
@@ -54,6 +58,10 @@
                         line-height: 1.30;
                         text-transform: capitalize;
                         margin-top: 16px;
+                        @media #{$sm-layout} {
+                            font-size: 13px;
+                            margin-top: 6px;
+                         }
                     }
                 }
             }

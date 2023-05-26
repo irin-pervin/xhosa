@@ -1,5 +1,4 @@
 .single-service {
-    padding-right: 75px;
     .service-inner {
         img {
             width: 100%;
@@ -14,4 +13,24 @@
         }
     }
     
+}
+
+.card-slider-head-inner {
+    position: relative;
+    .section-head {
+        position: absolute;
+        left: -40%;
+        transform: rotate(270deg);
+    }
+}
+
+.card-slider-head {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+   
+    .description {
+        max-width: 550px;
+        margin-right: 186px;
+    }
 }

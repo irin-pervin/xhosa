@@ -30,6 +30,14 @@
             }
 
         }
+
+        &.blog-details {
+            display: flex;
+            align-items: center;
+            span {
+                margin-right: 16px;
+            }
+        }
     }
     &.header-social-icons {
         .social-icon-inner {

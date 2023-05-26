@@ -1,56 +1,58 @@
+.header-top {
+    background-color: var(--color-bg-1);
+}
 
-// .header-top-inner{
-//     display: flex;
-//     justify-content: space-between;
-//     align-items: center;
-//     padding: 30px;
-// }
+.header-top-inner {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 30px 0;
+ 
 
-// .header-top-left {
-//     .header-top-link {
-//         margin-right: 65px;
-//         font-weight: 400;
-//         font-size: 15px;
-//         line-height: 1.2;
-//         color: var(--color-body);
-//         &:last-child {
-//             margin-right: 0;
-//         }
-//         i {
-//             margin-right: 15px;
-//             color: var(--color-body);
-//         }
-//     }
-// }
+    .header-top-link{
+        display: flex;
+        li {
+            padding-right: 33px;
+            &:last-child {
+                padding-right: 0;
+            }
+            a {
+                color: var(--color-body);
+                font-family: 'Prompt';
+                font-weight: var( --f-regular);
+                font-size: 15px;
+                line-height: 1.20;
+                text-transform: capitalize;
+                i {
+                    margin-right: 13px;
 
-// .header-top-right {
-//     display: flex;
-// }
+                }
+                span {
 
-// .social-icon-inner {
-//     display: flex;
-// }
+                }
+            }
 
-// .bg-dark {
-//     background-color: var(--color-black);
-// }
+            &.location {
+                border-left: 1px solid var(--color-body);
+                padding-left: 33px;
+            }
+        }
+    }
+}
 
-// .body{
-//     &.main{
-//         position: relative;
-//     }
-// }
-
-// header.gmt-header{
-//     position: absolute;
-//     width: 100%;
-//     z-index: 5;
-//     width: 1764px;
-// }
-
-
-
-
+.social-share-transparent {
+    display: flex;
+    li {
+        padding: 0 16px;
+        border-right: 1px solid var(--color-body);
+        a {
+            i {
+                color: var(--color-body);
+                
+            }
+        }
+    }
+}
 
 
 

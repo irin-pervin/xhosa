@@ -6,6 +6,7 @@
     color: #888888;
     padding: 18px 30px;
     position: relative;
+    display: inline-block;
     &::before {
         position: absolute;
         content: " ";
@@ -24,6 +25,10 @@
         padding: 18px 125px;
         background-color: transparent;
     }
+
+    &.service-btn {
+        margin-left: 181px;
+    }    
 }
 
 .btn-underline {
@@ -64,3 +69,36 @@
         }
     }
 }
+
+
+.vedio-play {
+    height: 72px;
+    width: 72px;
+    background: transparent;
+    border: 1px dashed var(--color-body);
+    border-radius: 100%;
+    line-height: 72px;
+    text-align: center;
+    &.for-banner {
+        position: absolute;
+        right: 0;
+        bottom: -90px;
+    }
+    
+  }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  

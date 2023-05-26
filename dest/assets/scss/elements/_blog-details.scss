@@ -1,0 +1,78 @@
+.btn-group-with-social-icons {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.single-full-width-blog {
+    padding: 40px;
+    margin: 40px 0;
+
+    .blog-content {
+        .title {
+            span {
+                color: var(--color-secondary);
+                font-weight: 500;
+                font-size: 16px;
+                line-height: 1.20;
+                text-transform: capitalize;
+            }
+        }
+    }
+}
+
+.blog-details-design-two {
+    border: 1px solid var(--color-border);
+    padding: 30px;
+    &.service-details {
+        margin-top: 40px;
+    }
+
+    .blog-inner {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        
+    }
+}
+
+.blog-right {
+    text-align: end;
+}
+
+.blog-wiget {
+    display: flex;
+    align-items: center;
+    .content {
+        padding: 0 17px;
+        max-width: 70%;
+        &.services-content {
+            max-width: 100%;
+            .title {
+                margin-bottom: 12px;
+            }
+            button {
+                margin-bottom: 0;
+                
+            }
+        }
+
+        .title {
+            font-size: 16px;
+            margin-bottom: 0;
+            
+        }
+        button {
+            background-color: transparent !important;
+            border: none;
+            font-size: 16px;
+            font-weight: var(--f-regular);
+            padding: 0;
+            margin-bottom: 14px;
+            span {
+                color: var(--color-body);
+            }
+            
+        }
+    }
+}

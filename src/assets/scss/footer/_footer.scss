@@ -62,26 +62,46 @@
 }
 
 
-
-
-
-
 .footer-area{
-    background-image: url(../images/footer/footer-1.png);
-    position: relative;
-    padding-top: 160px;
-    padding-bottom: 70px;
-   z-index: 1;
-    &::before {
-        position: absolute;
-        content: " ";
-        height: 100%;
-        width: 100%;
-        background: linear-gradient(180deg, rgba(14, 14, 14, 0.96) 0%, rgba(0, 0, 0, 0.88) 100%);
-        left: 0;
-        top: 0;
-        z-index: -1;
+    &.industri-service {
+        background-image: url(../images/footer/footer-1.png);
+        position: relative;
+        padding-top: 160px;
+        padding-bottom: 70px;
+        z-index: 1;
+            &::before {
+                position: absolute;
+                content: " ";
+                height: 100%;
+                width: 100%;
+                background: linear-gradient(180deg, rgba(14, 14, 14, 0.96) 0%, rgba(0, 0, 0, 0.88) 100%);
+                left: 0;
+                top: 0;
+                z-index: -1;
+            }
     }
+    &.oil-industry {
+        background-color: #191919;
+        padding-top: 160px;
+        
+       
+        .copyright-inner {
+            padding: 50px 513px 50px 255px;
+            display: inline-block;
+           margin: 60px 0;
+        }
+        
+    }
+
+    &.gas-industry {
+        background-color: #191919;
+        padding-top: 100px;
+
+        .logo {
+            margin-bottom: 60px;
+        }
+    }
+    
     .footer-widget {
         .ft-link {
             padding-left: 0;
@@ -135,12 +155,31 @@
         display: flex;
         align-items: center;
         justify-content: space-between;
-        background-color: var(--color-deep-black);
-        padding: 30px;
+
         @media #{$large-mobile} {
             display: block;
             text-align: center;
         }
+
+        &.background-black {
+            background-color: var(--color-deep-black);
+            padding: 30px;
+       
+
+        }
+
+        &.background-transparent {
+            padding: 40px 0;
+            // border-top: 1px solid var(--color-heading);
+            p {
+                margin: 0;
+            }
+            .social-icons {
+                margin: 0;
+            }
+
+        }
+        
         .logo {
             @media #{$large-mobile} {
                 margin-bottom: 10px;
@@ -170,4 +209,29 @@
 
         }
     }
+}
+
+
+// footer style two 
+
+.footer-thumbnail {
+    position: absolute;
+    background-image: url(../images/footer/footer-oil-industry.png);
+    max-width: 100%;
+    padding: 0 400px 90px 60px;
+    margin-top: -160px;
+    .footer-widget {
+        padding: 30px;
+        background-color: var(--color-black);
+        margin-top: 60px;
+        
+    }
+
+}
+
+hr {
+    margin: 0;
+}
+address {
+    margin-bottom: 30px !important;
 }

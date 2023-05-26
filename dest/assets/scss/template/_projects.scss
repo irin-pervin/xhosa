@@ -1,0 +1,162 @@
+.projects-inner {
+    position: relative;
+    transition: .5s;
+    &.slider-banner {
+        &:hover {
+            transform: scale(1);
+        }
+    }
+
+    
+    .thumbnail {
+        position: relative;
+        img {
+            width: 100%;
+        }
+        &::before {
+            content: " ";
+            position: absolute;
+            height: 100%;
+            width: 100%;
+            left: 0;
+            top: 0;
+            background: linear-gradient(180deg, rgba(255, 153, 0, 0) 0%, #EE332B 100%);
+            z-index: 1;
+            opacity: 0;
+            transition: .5s;
+        }
+    }
+
+    .icon {
+        position: absolute;
+        top: 20px;
+        left: 20px;
+        height: 72px;
+        width: 72px;
+        line-height: 72px;
+        text-align: center;
+        background-color: #ffffff;
+        border-radius: 100%;
+        z-index: 1000;
+        transition: .5s;
+        opacity: 0;
+    }
+    .title {
+        position: absolute;
+        bottom: 40px;
+        left: 40px;
+        font-weight: var(--f-medium);
+        font-size: 24px;
+        line-height: 1.20;
+        text-transform: capitalize;
+        color: var(--color-heading);
+        z-index: 1000;
+        opacity: 0;
+        transition: .5s;
+    }
+
+    &:hover {
+        transform: scale(1.05);
+        .thumbnail {
+            &::before {
+                opacity: 1;
+            }
+        }
+
+        .icon {
+            opacity: 1;
+        }
+
+        .title {
+            opacity: 1;
+        }
+
+    }
+}
+
+
+
+
+
+
+// text scrolling 
+// .tickerwrapper {
+//     .list {
+//         display: flex;
+//         align-items: center;
+//       .listitem {
+//         font-weight: 900;
+//         font-size: 100px;
+//         line-height: 85px;
+//         text-transform: uppercase;
+//         .double-line {
+//           color: transparent;
+//                 text-stroke: 2px #000;
+//                 -webkit-text-stroke: 2px #000;
+                
+//         }
+//       }
+//     }
+//   }
+
+
+ 
+  .tickerwrapper { 
+  position:relative;
+  width: 99.9%; 
+  height: 80px; 
+  overflow: hidden; 
+  background: #FF9900;
+  transform: rotate(4.12deg);
+  margin-top: 88px;
+  }
+  ul.list {
+  position:relative;
+  display:inline-block;
+  list-style:none;
+  }
+  ul.list.cloned {
+  position:absolute;
+  top:0;
+  left:0;
+  }
+  ul.list li {
+    float: left;
+    padding-left:40px;
+    font-family: "Arial Black", Gadget, sans-serif;
+    font-size:48pt;  
+    font-weight: 600;
+    text-transform: uppercase;
+  }
+  
+
+  .tickerwrapper {
+    .list {
+      &.cloned {
+        margin: 0;
+      }
+      .listitem {
+        font-weight: 900;
+        line-height: 85px;
+        text-transform: uppercase;
+        span {
+            font-size: 65px;
+            
+          &.double-line {
+            color: transparent;
+            text-stroke: 2px #000;
+            -webkit-text-stroke: 2px #ffffff;
+            
+            }
+
+            &.double-line-black {
+                text-stroke: 2px #000;
+              -webkit-text-stroke: 2px #000;
+              
+              }
+
+            }
+       
+      }
+    }
+  }

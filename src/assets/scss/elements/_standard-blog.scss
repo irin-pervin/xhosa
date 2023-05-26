@@ -12,6 +12,7 @@
     &.blog-high {
         .blog-inner {
             margin-bottom: 60px;
+            position: relative;
             @media #{$md-layout} {
                 margin-bottom: 40px;
               }
@@ -19,42 +20,136 @@
               @media #{$sm-layout} {
                 margin-bottom: 30px;
               }
+              .tag {
+                position: absolute;
+                top: 30px;
+                left: 30px;
+                span {
+                    background-color: var(--color-secondary);
+                    color: var(--color-heading);
+                    padding: 8px 16px;
+                    font-weight: 500;
+                    font-size: 16px;
+                    line-height: 1.20;
+                    text-transform: capitalize;
+
+                }
+              }
         }
+    }
+    &.services-blog {
+        position: relative;
+        .blog-inner {
+            .thumbnail {
+                position: relative;
+                &::before {
+                    position: absolute;
+                    content: " ";
+                    width: 100%;
+                    height: 100%;
+                    background: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, #000000 100%);
+                    left: 0;
+                    top: 0;
+                    opacity: 0;
+                    transition: .5s;
+                }
+                .icon-plan {
+                    position: absolute;
+                    left: 45%;
+                    top: 50%;
+                    transform: translate(-50%, -50%);
+                    font-weight: 500;
+                    opacity: 0;
+                    transition: .5s;
+                    
+                }
+            }
+            .title {
+                transition: .5s;
+                margin-bottom: 20px;
+                margin-top: 20px;
+            }
+
+            .description {
+                padding-right: 100px;
+                line-height: 1.6;
+                margin-bottom: 0;
+            }
+        }
+
+        .number {
+            position: absolute;
+            left: -30px;
+            top: 50%;
+            color: var(--color-primary);
+            transform: rotate(269deg);
+            font-size: 20px;
+        }
+       &:hover {
+        .blog-inner {
+            .thumbnail {
+              
+                &::before {
+                    opacity: 1;
+                }
+                .icon-plan {
+                    opacity: 1;
+                    
+                }
+            }
+
+            .title {
+                background: linear-gradient(90deg, #FF9900 0%, #CC2500 100%);
+                -webkit-background-clip: text;
+                -webkit-text-fill-color: transparent;
+                background-clip: text;
+                text-fill-color: transparent;
+                
+            }
+        }
+
+       }
+
     }
     &:first-child {
         margin-top: 0;
     }
     .blog-inner {
         padding: 30px;
-        .title {
-            font-weight: var(--f-medium);
-            font-size: var(--font-size-b1);
-            line-height: var(--line-height-b1);
-            text-transform: capitalize;
-            margin-top: 30px;
-            margin-bottom: 25px;
-            @media #{$md-layout} {
-               font-size: 18px;
-               margin-top: 25px;
-               margin-bottom: 12px;
-             }
+        .blog-content-2 {
+            padding-right: 10px;
 
-             @media #{$sm-layout} {
+            .title {
+                font-weight: var(--f-medium);
+                font-size: var(--font-size-b1);
+                line-height: var(--line-height-b1);
+                text-transform: capitalize;
+                margin-top: 30px;
+                margin-bottom: 25px;
+                @media #{$md-layout} {
+                   font-size: 18px;
+                   margin-top: 25px;
+                   margin-bottom: 12px;
+                 }
+    
+                 @media #{$sm-layout} {
+                    font-size: 16px;
+                    margin-top: 15px;
+                    margin-bottom: 8px;
+                  }
+            }
+    
+            .description {
+                margin-bottom: 40px;
+                font-weight: var(--f-regular);
                 font-size: 16px;
-                margin-top: 15px;
-                margin-bottom: 8px;
-              }
+                line-height: var(--line-height-b3);
+                text-transform: capitalize;
+                color: #888888;
+    
+            }
         }
-
-        .description {
-            margin-bottom: 40px;
-            font-weight: var(--f-regular);
-            font-size: 16px;
-            line-height: var(--line-height-b3);
-            text-transform: capitalize;
-            color: #888888;
-
-        }
+        
     }
 }
 

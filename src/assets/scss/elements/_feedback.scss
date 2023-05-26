@@ -62,7 +62,7 @@
 }
 
 .slider-inner {
-  padding: 70px;
+  padding: 30px 398px 30px 72px;
 }
 
 
@@ -75,13 +75,13 @@
   position: absolute;
   right: 0;
   top: 50%;
+ max-width: max-content !important;
 }
 
 .swiper-slide {
   font-family: var(--font-primary);
   background-size: cover;
   background-position: 100%;
-  min-height: 100vh;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -91,16 +91,3 @@
 
 
 
-.swiper-pagination.swiper-pagination-clickable.swiper-pagination-bullets.swiper-pagination-horizontal {
-  top: 50% !important;
-  right: 0 !important;
-
-}
-.swiper-pagination-bullet {
-  background-color: var(--color-body);
-  &.swiper-pagination-bullet-active {
-    background-color: var(--color-primary);
-  }
- 
-
-} 
